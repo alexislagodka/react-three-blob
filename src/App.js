@@ -1,10 +1,10 @@
 import React from "react";
 import "./App.css";
 import BlobWave from "./BlobWave/BlobWave";
-import Blob from "./Blob/Blob";
-import Box from "./Box/Box";
-import { Canvas } from "@react-three/fiber";
-import { PerspectiveCamera } from "@react-three/drei";
+// import Blob from "./Blob/Blob";
+// import Box from "./Box/Box";
+// import { Canvas } from "@react-three/fiber";
+// import { PerspectiveCamera } from "@react-three/drei";
 
 export default function App() {
   return (
