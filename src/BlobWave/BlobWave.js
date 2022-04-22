@@ -110,7 +110,7 @@ const Scene = ({ settings }) => {
       uAmplitude: { value: settings.amplitude },
       uIntensity: { value: settings.intensity },
     }),
-    []
+    [true]
   );
 
   return (
