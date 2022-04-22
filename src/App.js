@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import BlobWave from "./BlobWave/BlobWave";
+import Blob from "./Blob/Blob";
+import Box from "./Box/Box";
+import { Canvas } from "@react-three/fiber";
+import { PerspectiveCamera } from "@react-three/drei";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <section>
+        <BlobWave />
+      </section>
+      {/* <section>
+        <Canvas camera={{ zoom: 3, position: [0, 0, 100] }}>
+        <Canvas>
+          <PerspectiveCamera
+            fov={30}
+            position={[0, 0, 100]}
+            near={window.innerWidth / window.innerHeight}
+            far={10000}
+            makeDefault
+          />
+          <Blob />
+        </Canvas>
+      </section>
+      <section>
+        <Canvas>
+          <ambientLight />
+          <pointLight position={[10, 10, 10]} />
+          <Box position={[-1.2, 0, 0]} />
+          <Box position={[1.2, 0, 0]} />
+        </Canvas>
+      </section> */}
+    </>
   );
 }
-
-export default App;
