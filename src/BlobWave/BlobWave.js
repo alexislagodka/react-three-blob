@@ -110,8 +110,10 @@ const Scene = ({ settings }) => {
       uAmplitude: { value: settings.amplitude },
       uIntensity: { value: settings.intensity },
     }),
-    [true]
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    []
   );
+  
 
   return (
     <mesh>
